@@ -114,19 +114,17 @@ public class Project1 {
     }
 
     public static boolean isTen(int[] arr) {
-        int[]ten = new int[5];
+        int[] ten = new int[5];
         for (int el : arr) {
             ten[el / 10]++;
-            for(int count : ten) {
-                if(count > 3) {
-                    return false;
-                }
+        }
+        for (int count : ten) {
+            if (count > 3) {
+                return false;
             }
-
         }
         return true;
-
-
     }
-    }
+
+}
 
